@@ -118,7 +118,7 @@
         font-size: .7em;
         vertical-align: super;
     }
-    .pad ol a.text::after::hover {
+    .pad ol a.text::after:hover {
     	color: red;
     }
     .boxes.gallery-container div > h2{
