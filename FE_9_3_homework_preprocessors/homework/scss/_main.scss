@@ -1,0 +1,150 @@
+body{
+    background-color: $bgColorPage;
+    .main-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        .logo{
+            img{
+                width: 85%;
+                height: 115%;
+            }
+        }
+        nav{
+            border-bottom: 2px solid $borderColor;
+            border-top: 2px solid $borderColor;
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 75%;
+            align-self: flex-end;
+            a{
+                text-decoration: none;
+                color: $navColorText;
+                font-size: 28px;
+                text-transform: uppercase;
+                
+            }
+        }
+    }
+    .toolbar {
+        align-self: flex-end;
+        margin-top: 60px;
+        input{
+            margin-bottom: 40px;
+            background-color: $bgColorPage;
+            border: 2px solid $navColorText;
+            padding-left: 23px;
+            font-size: 22px;
+            font-family: "Roboto Slab", serif;
+            width: 141px;
+            height: 56px;
+            &::-webkit-input-placeholder { color: $navColorText; }
+        }
+    }
+    #list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        article {            
+            align-self: flex-start;
+            background-color: $bgColorMain;
+            width: 49%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 12px;
+            box-sizing: border-box;
+            margin-bottom: 38px;
+            padding-bottom: 76px;
+            img {
+                margin: auto;
+                width: 99%;
+                margin-bottom: 24px;
+                
+            }
+            .post-description{
+                font-family: $textTitleImg;
+                color: $imgTitleColor;
+                border-bottom: 1px solid $mainTextColor;
+                padding-bottom: 24px;
+            }
+            h3{
+                font-family: $textTitleImg;
+                color: $mainBoldColor;
+                text-transform: uppercase;
+                font-size: 1.5em;
+            }
+            p{
+                font-family: $textTitleImg;
+                color: $mainTextColor;
+                font-size: 17px;
+            }
+        }
+        article:nth-last-child(1) {
+            align-self: auto;
+        }
+    }
+    #about{
+        h1{
+            color: $navColorText;
+            font-family: $textTitleImg;
+            text-align: right;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $mainTextColor;
+            font-family: $textTitleImg;
+        }
+        img{
+            margin-top: 100px;
+            width: 100%;
+        }
+    }
+    #contact{
+        text-align: right;
+        color: $navColorText;
+        font-family: $textTitleImg;
+        text-transform: uppercase;
+        form{
+            display: flex;
+            flex-direction: column;
+            color: $formTextColor;
+            font-family: $textTitleImg;
+            input,textarea {
+                background-color: $bgColorPage;
+                border: 2px solid $borderColor;
+                margin-top: 45px;
+                height: 96px;
+                font-size: 20px;
+                padding-left: 40px;
+            }
+            textarea{
+                height: 236px;
+                padding-top: 25px;
+            }
+            button{
+                margin-top: 45px;
+                width: 404px;
+                height: 80px;
+                align-self: flex-end;
+                color: white;
+                background-color: $navColorText;
+                border: none;
+                font-family: $textTitleImg;
+                font-size: 22px;
+            }
+        }
+    }
+    footer{
+        color: $mainTextColor;
+        font-family: $textTitleImg;
+        font-size: 12px;
+    }
+}
