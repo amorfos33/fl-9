@@ -218,7 +218,7 @@ footer p{
 }
 footer article{
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     width: 320px;
     margin-bottom: 150px;
 }
