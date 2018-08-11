@@ -15,6 +15,7 @@
 }
 body{
     min-width: 900px;
+    padding-bottom: 25px;
 }
 header {
     padding-top: 55px;
@@ -248,6 +249,9 @@ footer article .footerForm button{
 .footer{
     padding-top: 25px;
     color: #A4A4A4;
+}
+.wrapper.footer{
+    border: none;
 }
 .footer .copiBlack a{
     margin-left: 20px;
