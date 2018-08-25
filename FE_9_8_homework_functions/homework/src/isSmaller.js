@@ -1,3 +1,3 @@
-function isSmaller(valueA,valueB){
-    return valueA<valueB;
+function isSmaller(valueA, valueB){
+    return !isBigger(valueA, valueB);
 }

@@ -1,5 +1,3 @@
-function reverseNumber(a,b,c,d){
-    return revers=reverseNumber.reverse();
+function reverseNumber(number) {
+    return Number(Array.from(String(Math.abs(number))).reverse().join('')) * Math.sign(number);
 }
-
-alert(reverseNumber(1,2,3,5);

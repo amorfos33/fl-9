@@ -1,3 +1,3 @@
-function isBigger(valueA,valueB){
+function isBigger(valueA, valueB){
     return valueA>valueB;
 }
